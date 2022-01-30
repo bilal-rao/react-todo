@@ -39,6 +39,7 @@ export default function TodoList() {
   };
 
   const onEditTodo = (ev, index) => {
+    console.log("onEditTodo")
     let editTodos = todos.map((todo, i) => {
       if (i === index) {
         todo.text = ev.target.value;
